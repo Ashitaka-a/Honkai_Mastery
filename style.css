@@ -2,6 +2,7 @@
     --text-color: #fdfdff;
     --dark-blue: #1b1b1e;
     --light-blue: #373F51;
+    --shadow: #000000;
 }
 
 body {
@@ -16,6 +17,7 @@ header {
     height: 60px;
     position: relative;
     top: 0;
+    box-shadow: 0px 5px 50px #000000;
 }
 
 header img {
