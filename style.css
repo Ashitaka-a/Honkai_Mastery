@@ -1,47 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
 :root {
     --text-color: #fdfdff;
     --dark-blue: #1b1b1e;
-    --light-blue: #373f51;
-    --font-size-base: 16px;
+    --light-blue: #373F51;
 }
 
 body {
-    font-family: 'Poppins';
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
-    height: 100vh;
-    width: 100vw;
-    background-color:var(--light-blue) ;
-    background-size: cover;
+    background-color: var(--dark-blue);
+    height: 60px;
+    position: relative;
+    top: 0;
 }
 
-.navbar {
+header img {
+    width: 30px;
+}
+
+header>* {
     position: absolute;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
 }
 
-.navbar a {
+header ul {
+    right: 0;
+}
+
+header a {
     color: var(--text-color);
+    text-decoration: none;
 }
 
-.navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
+header a:nth-child(2) {
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 80px;
 }
 
-.navbar .nav-links {
-    display: flex;
-    align-items: center;
+header ul li {
+    margin: 20px;
+    font-weight: 700;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header ul li:hover {
+    background-color: var(--light-blue);
 }
