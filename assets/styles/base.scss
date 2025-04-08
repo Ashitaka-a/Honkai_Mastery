@@ -3,5 +3,7 @@
 
 @use 'settings/config.colors';
 
-@use 'components/sections';
 
+@use 'components/header';
+
+@use 'pages/home';
