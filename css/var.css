@@ -1,0 +1,15 @@
+/* Colors */
+:root {
+    --text-color: #fdfdff;
+    --background-dark: #1b1b1e;
+    --background-light: #373F51;
+}
+
+
+/* Font */
+:root {
+    --font-family-base: "Rubik", sans-serif;
+    --font-size-title: 24px;
+    --font-size-subtitle: 16px;
+    --font-size-text: 14px;
+}
