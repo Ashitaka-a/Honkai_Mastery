@@ -1,0 +1,20 @@
+.new-character-name-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 100px;
+    font-weight: bold;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.new-character-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.new-character-image-container img {
+    width: 95%;
+}
+
