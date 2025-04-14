@@ -1,11 +1,12 @@
 .spacer {
-    height: calc(320px + (1350 - 320) * ((90vw - 480px) / (1920 - 480)));
+    height: calc(320px + (1320 - 320) * ((90vw - 480px) / (1920 - 480)));
 }
 
 .container {
     padding: 20px;
 
     &__text p {
+        font-size: 30px;
         text-align: center;
         font-weight: bold;
         color: var(--text-color);
