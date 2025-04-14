@@ -1,9 +1,15 @@
-@use 'elements/reset';
-@use 'elements/document';
+@import 'elements/reset';
+@import 'elements/document';
 
-@use 'settings/config.colors';
+@import 'settings/config.variables';
+@import 'settings/config.colors';
+@import 'settings/config.fonts';
+
+/** Components **/
+@import 'components/header';
+@import 'components/poster';
+@import 'components/container';
 
 
-@use 'components/header';
-
-@use 'pages/home';
+/** Page **/
+@import 'pages/home';
