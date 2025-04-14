@@ -1,6 +1,13 @@
+.spacer {
+    height: calc(320px + (1350 - 320) * ((90vw - 480px) / (1920 - 480)));
+}
+
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+    padding: 20px;
+
+    &__text p {
+        text-align: center;
+        font-weight: bold;
+        color: var(--text-color);
+    }
 }
