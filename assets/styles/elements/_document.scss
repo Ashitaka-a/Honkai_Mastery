@@ -1,7 +1,5 @@
-html {
-
-}
-
 body {
-    background: var(--primary-color);
+    font-family: var(--font-family-base);
+    background: linear-gradient(to bottom, #373F51 0%, #373F51  40%, #5a3793 100%);
+    background-attachment: fixed;
 }
