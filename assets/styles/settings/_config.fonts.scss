@@ -1,8 +1,20 @@
-/* Font */
+/* Fonts */
 :root {
+    /* Global */
     --font-family-base: "Rubik", sans-serif;
     --font-size-title: 24px;
     --font-size-subtitle: 16px;
     --font-size-text: 14px;
     --font-size-res: calc(0.01 * 10vmin);
+    --font-weight-title: bold;
+    --font-style-title: italic;
+
+
+    /* Poster */
+    --font-size-poster: 3vw;
+
+
+    /* Container */
+    --container-h1-size: clamp(1rem, 5vw, 10rem);
+    
 }

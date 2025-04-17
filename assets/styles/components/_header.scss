@@ -1,15 +1,15 @@
 #header {
     position: sticky;
-    top: 0;
-    z-index: 9; // @todo mettre variable
+    top: var(--header-position-top);
+    z-index: var(--header-z-index);
 }
 
 
 .header-background {
-    background-color: var(--background-dark);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
-    padding: 15px;
-    width: 100%;
+    background-color: var(--header-bg-color);
+    box-shadow: var(--header-box-shadow);
+    padding: var(--header-padding);
+    width: var(--header-width);
 }
 
 .header-container {
@@ -25,18 +25,20 @@
 }
 
 .header-title img {
-    height: 25px;
-    width: 200px;
-    margin-left: 20px;
+    height: var(--header-logo-title-height);
+    width: var(--header-logo-title-width);
+    margin-left: var(--header-logo-title-margin-left);
+    margin-top: var(--header-logo-title-margin-top);
 
-    @media (max-width: 480px) {
+    // @media (max-width: 480px) {
+    @include media-max('phone-down') {
         display: none;
-        }
+    }
 }
 
 .header-logo img {
-    height: 40px;
-    width: 40px;
+    height: var(--header-logo-size);
+    width: var(--header-logo-size);
 }
 
 .header-container ul li {
@@ -52,21 +54,21 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--text-color);
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: var(--header-text-margin);
+    margin-left: var(--header-text-margin);
     background-color: var(--background-light);
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border-radius: var(--header-text-border-radius);
+    padding-left: var(--header-text-padding-lr);
+    padding-right: var(--header-text-padding-lr);
+    padding-top: var(--header-text-padding-tb);
+    padding-bottom: var(--header-text-padding-tb);
 }
 
 .header-hamburger-menu {
     display: none;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: var(--header-logo-size);
+    height: var(--header-logo-size);
 
     @media (max-width: 1200px) {
         display: flex;

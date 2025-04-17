@@ -1,4 +1,75 @@
+/* Variables */
 :root {
+    /* Margin */
+    --global-text-margin: 25px;
 
+
+    /* Box Sahdow */
+    --box-shadow-global: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+
+    /* Stroke */
+    --text-stroke: 5px;
+
+
+    /* Width / Weight */
+    --max-percentage: 100%;
+    --middle-percentage: 50%;
+
+
+    /* Logo */
+    --logo-size: 40px;
+
+
+    /* Border Radius */
+    --global-border-radius: 20px;
+
+
+    /* Header */
+    --header-position-top: 0;
+    --header-z-index: 10;
+    --header-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    --header-padding: 15px;
+    --header-width: var(--max-percentage);
     
+
+    /* Header logo */
+    --header-logo-size: var(--logo-size);
+
+
+    /* Logo Title */
+    --header-logo-title-height: 30px;
+    --header-logo-title-width: 100%;
+    --header-logo-title-margin-left: 20px;
+    --header-logo-title-margin-top: 10px;
+
+
+
+    /* Header text */
+    --header-text-margin: var(--global-text-margin);
+    --header-text-border-radius: var(--global-border-radius);
+    --header-text-padding-lr: 10px;
+    --header-text-padding-tb: 5px;
+
+
+    /* Poster */
+    --logo-name-padding-top: 2%;
+    --logo-name-min-width: 150px;
+    --logo-build-padding-top: 10%;
+    --logo-build-padding-left: 40%;
+    --logo-build-img-width: 30%;
+    --logo-build-img-min-width: 50px;
+    --logo-build-img-max-width: 500px;
+    --padding-poster: 10%;
+
+
+    /* Container */
+    --container-margin-top: 5%;
+    --container-padding: 2%;
+    --container-title-padding: 1%;
+
+
+    /* Vidéo */
+    --video-size: 70%;
+
 }

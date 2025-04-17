@@ -1,19 +1,19 @@
 .container {
-    margin-top: 5%;
-    padding: 2%;
+    margin-top: var(--container-margin-top);
+    padding: var(--container-padding);
 
     &__title {
-        padding: 1%;
+        padding: var(--container-title-padding);
         background: linear-gradient(to right, transparent, var(--color-castorice), var(--color-castorice-light), var(--color-castorice), transparent);
     }
     
     h1 {
         text-align: center;
-        font-size: clamp(1rem, 5vw, 10rem);
+        font-size: var(--container-h1-size);
         font-family: var(--font-family-base);
         color: var(--text-color);
-        font-weight: bold;
-        font-style: italic;
+        font-weight: var(--font-weight-title);
+        font-style: var(--font-style-title);
         filter: drop-shadow(0px 0px 20px black);
 
         @media (max-width: 1530px) {
@@ -27,11 +27,11 @@
         margin-top: 5%;
 
         iframe {
-            width: 70%;
-            height: 70%;
+            width: var(--video-size);
+            height: var(--video-size);
             aspect-ratio: 16 / 9;
-            border: 1em solid var(--color-castorice-light);
-            filter: drop-shadow(0px 0px 20px black);
+            border: 1vw solid var(--color-castorice-light);
+            filter: drop-shadow(var(--box-shadow-global));
         }
     }
 }
