@@ -1,0 +1,23 @@
+#footer {
+    background-color: var(--header-bg-color);
+}
+
+.footer-container {
+        display: flex;
+        margin-top: var(--container-margin-top);
+        padding: 20px;
+        width: 100%;
+
+
+
+        &__logos {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+    }
+}
+
+.footer-container a img {
+    max-width: 10%;
+    }
