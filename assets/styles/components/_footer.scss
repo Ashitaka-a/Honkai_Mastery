@@ -4,6 +4,7 @@
 
 .footer-container {
         display: flex;
+        flex-direction: column;
         margin-top: var(--container-margin-top);
         padding: 20px;
         width: 100%;
@@ -13,11 +14,63 @@
         &__logos {
             display: flex;
             align-items: center;
+            gap: 5%;
+            justify-content: center;
+            padding-bottom: 20px;
+
+            @media (max-width: 768px) {
+               gap: 15%;
+
+            }
+        }
+
+            &__component {
+                width: 5%;
+            }
+
+                &__component svg {
+                color: white;
+                fill: currentColor;
+                }
+
+        &__text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            width: 100%;
-    }
+            border-bottom: 1px solid var(--text-color);
+            border-top: 1px solid var(--text-color);
+            padding: 20px;
+        }      
+        
+        &__text p {
+            font-size: 1em;
+            text-decoration: none;
+            color: var(--text-color);
+
+            @media (max-width: 768px) {
+                font-size: 0.7em;
+            }
+        }
+
+        &__privacy {
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            justify-content: center;  
+            padding-top: 20px;  
+            
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+            
+            &__privacy a {
+                font-size: 1em;
+                text-decoration: none;
+                color: var(--text-color);
+            }
 }
 
-.footer-container a img {
-    max-width: 10%;
-    }
+

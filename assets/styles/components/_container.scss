@@ -10,6 +10,8 @@
 .container {
     padding: var(--container-padding);
     width: 80%;
+    background-color: rgba(187, 133, 234, 0.1);
+    border: 2px solid #bb85ea;
     
 
     &__title {
